@@ -1,0 +1,62 @@
+start up script. 
+
+aws_startup.sh
+
+#!/bin/bash
+apt-get update -y
+sudo apt install -y docker.io
+
+
+Notes for setting up AWSCLI 
+
+2023-04-04
+
+vpc-14814b73
+
+subnet-f02c90ab
+ami-014d05e6b24240371
+
+aws configure
+
+aws ec2 create-security-group \
+    --group-name demo-sg \
+    --description "AWS ec2 CLI Demo SG" \
+    --tag-specifications 'ResourceType=security-group,Tags=[{Key=Name,Value=demo-sg}]' \
+    --vpc-id "vpc-14814b73"
+
+sg-096b6a12a8f7e0283
+
+
+aws ec2 authorize-security-group-ingress \
+    --group-id "sg-096b6a12a8f7e0283" \
+    --protocol tcp \
+    --port 22 \
+    --cidr "0.0.0.0/0" 
+
+
+aws ec2 authorize-security-group-ingress \
+    --group-id "sg-096b6a12a8f7e0283" \
+    --protocol tcp \
+    --port 443 \
+    --cidr "0.0.0.0/0" 
+
+
+aws ec2 create-key-pair  --key-name  wp-key-03 \
+   --query 'KeyMaterial' --output text > ~/.ssh/demo-key
+
+aws ec2 run-instances \
+    --image-id ami-014d05e6b24240371 \
+    --count 1 \
+    --instance-type t2.micro \
+    --key-name wp-key-03 \
+    --security-group-ids sg-096b6a12a8f7e0283 \
+    --subnet-id subnet-f02c90ab \
+    --block-device-mappings "[{\"DeviceName\":\"/dev/sdf\",\"Ebs\":{\"VolumeSize\":30,\"DeleteOnTermination\":false}}]" \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=power1_app}]' 'ResourceType=volume,Tags=[{Key=Name,Value=power1_app-disk}]' \
+    --user-data file://aws_startup.sh
+
+cd ~/.ssh 
+sudo chmod 600 demo.key
+
+
+~/.ssh ᐅ ssh -i "~/.ssh/demo-key" ubuntu@ec2-54-153-75-138.us-west-1.compute.amazonaws.com

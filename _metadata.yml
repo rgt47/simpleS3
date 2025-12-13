@@ -1,0 +1,5 @@
+project:
+  render:
+    - "*.qmd"
+    - "!ignored.qmd"
+    - "!_archive/"

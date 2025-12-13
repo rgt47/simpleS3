@@ -1,0 +1,9 @@
+
+\begin{tabular}[t]{llllllll}
+\toprule
+variables & female (N = 29) & male (N = 20) & p.value & female (N = 18) & male (N = 19) & female (N = 3) & male (N = 8)\\
+\midrule
+\cellcolor[HTML]{f0efd4}{\textcolor{black}{body\_mass\_g}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{4322.41 (708.66)}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{5266.25 (653.14)}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{0}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}}\\
+\cellcolor[HTML]{f0efd4}{\textcolor{black}{bill\_length\_mm}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{43.27 (3.75)}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{48.03 (4.25)}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{0.0001}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}} & \cellcolor[HTML]{f0efd4}{\textcolor{black}{}}\\
+\bottomrule
+\end{tabular}

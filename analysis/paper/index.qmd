@@ -1,0 +1,110 @@
+---
+title: "Writing a Simple R Package in S3"
+draft: true
+description: "Getting started with S3 object-oriented programming in R"
+author: "Ronald G. Thomas"
+date: today
+document-type: "blog"
+categories: [Programming-Development, R]
+tags:
+  - R
+  - oop
+  - S3
+  - package-development
+image: "/images/posts/oop.png"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: false
+    code-copy: true
+execute:
+  warning: false
+  message: false
+---
+
+```{r init, include=FALSE}
+
+
+```
+::: column-margin
+![S3 OOP in R](img/oop.png)
+:::
+
+# Introduction
+
+
+
+If you, like me, feel its time to expand your  R programming armamentarium  to
+include  S3 methods. This blog may help. 
+
+Where to start?
+
+In this post we'll walk through an example of a simple "table 1" function using
+S3 methods.
+
+We'll start with the 'raw' data from a sample of the Penguins data set and
+return a dataframe with summary measures.
+
+
+S3 methods allow coders to write functions that perform differently for
+different classes of objects.
+
+In our project we want to build a function that creates a row in the 'Table 1'
+table for each variable in the formula regardless of the class of the variable.
+
+Now reading Nick Tierney R journal paper.
+
+
+
+```{r}
+library(pacman)
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+source("~/shr/zz.tools.R")
+knitr::opts_chunk$set(collapse = T)
+set.seed(101)
+dat <- palmerpenguins::penguins %>%
+  fil(!is.na(sex))
+```
+
+# References
+
+
+Also useful other references:
+
+Introduction to Scientific Programming and Simulation using R. Jomes.
+Maillardet, Robinson.
+
+[1608.07161] A Simple Guide to S3 Methods https://arxiv.org/abs/1608.07161
+
+Why your S3 method isn't working | R-bloggers
+
+Dealing with S3 methods in R with a simple example | R-bloggers
+
+Video on S3 Classes in R by Dr Andrew Robinson | R-bloggers
+
+Unexported S3 Methods and R Packages | R-bloggers
+
+Simple Guide to S3 Methods | R-bloggers
+
+The S3 OOP system | R-bloggers
+
+ Nick Tierney R journal paper.
+
+## Prerequisites
+
+In development
+
+## Step-by-Step Implementation
+
+In development
+
+## Key Takeaways
+
+In development
+
+## Further Reading
+
+In development

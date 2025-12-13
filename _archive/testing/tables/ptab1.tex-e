@@ -1,0 +1,16 @@
+
+\begin{tabular}[t]{llll}
+\toprule
+variables & female (N = 48) & male (N = 49) & p.value\\
+\midrule
+\cellcolor[HTML]{99cfa8}{\textcolor{black}{island}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{1}}\\
+\cellcolor[HTML]{d4f0dc}{\textcolor{black}{\quad Biscoe}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{25 (52\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{24 (50\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{}}\\
+\cellcolor[HTML]{d4f0dc}{\textcolor{black}{\quad Dream}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{17 (35\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{18 (38\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{}}\\
+\cellcolor[HTML]{d4f0dc}{\textcolor{black}{\quad Torgersen}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{6 (12\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{6 (12\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{}}\\
+\cellcolor[HTML]{99cfa8}{\textcolor{black}{flp}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{}} & \cellcolor[HTML]{99cfa8}{\textcolor{black}{0.4188}}\\
+\cellcolor[HTML]{d4f0dc}{\textcolor{black}{\quad FALSE}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{27 (56\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{23 (47\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{}}\\
+\cellcolor[HTML]{d4f0dc}{\textcolor{black}{\quad TRUE}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{21 (44\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{26 (53\%)}} & \cellcolor[HTML]{d4f0dc}{\textcolor{black}{}}\\
+\cellcolor[HTML]{94ebad}{\textcolor{black}{body_mass_g}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{3861.98 (696.08)}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{4533.16 (804.02)}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{0}}\\
+\cellcolor[HTML]{94ebad}{\textcolor{black}{bill_length_mm}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{42.59 (4.64)}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{46.41 (5.81)}} & \cellcolor[HTML]{94ebad}{\textcolor{black}{0.0006}}\\
+\bottomrule
+\end{tabular}
