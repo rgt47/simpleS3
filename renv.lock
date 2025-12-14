@@ -50,6 +50,30 @@
       "Version": "1.1.5",
       "Source": "Repository",
       "Repository": "CRAN"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.1.4",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "janitor": {
+      "Package": "janitor",
+      "Version": "2.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pacman": {
+      "Package": "pacman",
+      "Version": "0.5.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidyverse": {
+      "Package": "tidyverse",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
     }
   }
 }
