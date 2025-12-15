@@ -62,7 +62,7 @@ library(pacman)
 library(tidyverse)
 library(palmerpenguins)
 library(knitr)
-source("~/shr/zz.tools.R")
+# source("~/shr/zz.tools.R")
 knitr::opts_chunk$set(collapse = T)
 set.seed(101)
 dat <- palmerpenguins::penguins %>%
